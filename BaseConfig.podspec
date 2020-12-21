@@ -1,42 +1,19 @@
-#
-# Be sure to run `pod lib lint BaseConfig.podspec' to ensure this is a
-# valid spec before submitting.
-#
-# Any lines starting with a # are optional, but their use is encouraged
-# To learn more about a Podspec see https://guides.cocoapods.org/syntax/podspec.html
-#
-
 Pod::Spec.new do |s|
   s.name             = 'BaseConfig'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of BaseConfig.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
+  s.summary          = 'config'
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+                       TODO: 先搞个config.
                        DESC
 
   s.homepage         = 'https://github.com/paradisery/BaseConfig'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'paradisery' => 'chengjunfeng@wutos.com' }
+  s.author           = { 'paradisery' => 'ruanyang@wutos.com' }
   s.source           = { :git => 'https://github.com/paradisery/BaseConfig.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-
+  
   s.ios.deployment_target = '9.0'
 
   s.source_files = 'BaseConfig/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'BaseConfig' => ['BaseConfig/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end

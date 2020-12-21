@@ -1,0 +1,22 @@
+{
+  "name": "BaseConfig",
+  "version": "0.1.0",
+  "summary": "A short description of BaseConfig.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/paradisery/BaseConfig",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "paradisery": "chengjunfeng@wutos.com"
+  },
+  "source": {
+    "git": "https://github.com/paradisery/BaseConfig.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "BaseConfig/Classes/**/*"
+}
