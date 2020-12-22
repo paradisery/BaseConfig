@@ -8,21 +8,22 @@
 
 #import "UINavigationBar+Other.h"
 #import "UIView+GradualLayer.h"
-#define UIColorFromHEX(rgbValue)    [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
+
 @implementation UINavigationBar (Other)
 
--(void)addNavigationBarGradualLayerWithColors:(NSArray *)colors{
+-(void)setNavigationBarGradualLayerWithColors:(NSArray *)colors{
 
     UIView * barBackgroundView = [[UIView alloc] initWithFrame:CGRectMake(0, -20, [UIScreen mainScreen].bounds.size.width, 64)];
     //调用UIView 类扩展方法
-    [barBackgroundView addGradualLayerWithColors:@[(__bridge id)UIColorFromHEX(0x2885FC).CGColor,
-                                                   (__bridge id)UIColorFromHEX(0x5055d4).CGColor]];
+    [barBackgroundView addGradualLayerWithColors:colors];
     UIImage *backImage = [self convertViewToImage:barBackgroundView];
     [self setBackgroundImage:backImage forBarMetrics:UIBarMetricsDefault];
+    //去掉底部黑线
     [self setShadowImage:[[UIImage alloc] init]];
-    
-    
+    //方法二：
+//    self.clipsToBounds = YES;
 }
+
 - (UIImage*)convertViewToImage:(UIView*)view{
     CGSize s = view.bounds.size;
     // 下面方法，第一个参数表示区域大小。第二个参数表示是否是非透明的。如果需要显示半透明效果，需要传NO，否则传YES。第三个参数就是屏幕密度了
@@ -32,4 +33,12 @@
     UIGraphicsEndImageContext();
     return image;
 }
+
+-(void)setNavigationBarRecovery{
+    UIView * v  = [UIView new];
+    v.backgroundColor = [UIColor whiteColor];
+    UIImage *backImage = [self convertViewToImage:v];
+    [self setBackgroundImage:backImage forBarMetrics:UIBarMetricsDefault];
+}
+
 @end

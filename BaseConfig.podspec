@@ -1,10 +1,10 @@
 Pod::Spec.new do |s|
   s.name             = 'BaseConfig'
-  s.version          = '0.1.2'
-  s.summary          = '添加了导航渐变色功能'
+  s.version          = '0.1.3'
+  s.summary          = '1、更新导航变色方法2、添加去除变色方法3、更新文件夹层级'
 
   s.description      = <<-DESC
-                       TODO: 添加了导航渐变色功能。
+                       TODO: 基础插件
                        DESC
 
   s.homepage         = 'https://github.com/paradisery/BaseConfig'

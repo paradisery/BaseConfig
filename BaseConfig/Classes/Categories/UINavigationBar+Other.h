@@ -12,7 +12,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface UINavigationBar (Other)
 
--(void)addNavigationBarGradualLayerWithColors:(NSArray *)colors;
+-(void)setNavigationBarGradualLayerWithColors:(NSArray *)colors;
+
+-(void)setNavigationBarRecovery;
 
 @end
 
