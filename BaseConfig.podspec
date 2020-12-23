@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name             = 'BaseConfig'
-  s.version          = '0.1.5'
-  s.summary          = '1、更新导航变色方法2、添加去除变色方法3、更新文件夹层级'
+  s.version          = '0.1.7'
+  s.summary          = '基础库'
 
   s.description      = <<-DESC
                        TODO: 基础插件:
