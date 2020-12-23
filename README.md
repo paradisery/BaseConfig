@@ -22,7 +22,7 @@ pod 'BaseConfig'
 
 ## Author
 
-paradisery, chengjunfeng@wutos.com
+1220776006@qq.com
 
 ## License
 
